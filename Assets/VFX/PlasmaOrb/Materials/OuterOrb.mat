@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Shield
-  m_Shader: {fileID: -6465566751694194690, guid: 35b759f679d14e944a9a0306f3edaa5e,
+  m_Name: OuterOrb
+  m_Shader: {fileID: -6465566751694194690, guid: 0bbae5411fb4bab47a026152e2b7a0be,
     type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
@@ -24,8 +24,12 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
-    - _MainTexture:
-        m_Texture: {fileID: 2800000, guid: 0591b49e0541ddf4f9add0eda5f5a9b9, type: 3}
+    - _SampleTexture2D_06a5e8f24a8b428e83d4cd43d2702771_Texture_1_Texture2D:
+        m_Texture: {fileID: 2800000, guid: 04edc0f8044255d47b2ca213fd768f82, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_825a0fe92dc9493d87b6192272e8159d_Texture_1_Texture2D:
+        m_Texture: {fileID: 2800000, guid: 04edc0f8044255d47b2ca213fd768f82, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - unity_Lightmaps:
@@ -42,17 +46,19 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _FresnelPower: 2
+    - _BorderPower: 7.5
+    - _BorderSize: 2
+    - _DistortionSpeed: 0.01
+    - _NoiseScale: 0.1
     - _QueueControl: 0
     - _QueueOffset: 0
-    - _VertexFrequency: 1
+    - _ScrollingSpeed: 0.025
+    - _SurfaceMovementSpeed: 0.025
     m_Colors:
-    - _BackColor: {r: 0, g: 0.24557783, b: 4.2641377, a: 1}
-    - _FresnelColor: {r: 0.8896498, g: 0, b: 7.5523434, a: 1}
-    - _FrontColor: {r: 0, g: 2.7158012, b: 16, a: 1}
-    - _VertexAmount: {r: 0.1, g: 0.1, b: 0.1, a: 0}
+    - _BorderColor: {r: 2, g: 1.4674118, b: 0, a: 1}
+    - _PlasmaColor: {r: 2.6701567, g: 2.6701567, b: 2.6701567, a: 1}
   m_BuildTextureStacks: []
---- !u!114 &2696726336980020213
+--- !u!114 &394473104671893882
 MonoBehaviour:
   m_ObjectHideFlags: 11
   m_CorrespondingSourceObject: {fileID: 0}
